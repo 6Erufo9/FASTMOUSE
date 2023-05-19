@@ -1,0 +1,618 @@
+
+body{
+    background-color:rgb(30, 29, 31);
+}
+
+.Logos{   
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logos img{
+    object-fit: contain;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+
+h1{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    max-width: fit-content;
+    min-width: min-content;
+    padding: 0px 5px;
+    text-align: center;
+    color: white;    
+    position: relative;
+    margin: 3px auto;
+}
+
+#TituloPrincipal{
+    display: block;
+    position: relative;
+    width: 7em;
+    height: auto;
+    font-weight: 800;
+    margin: 5px auto;
+    border-bottom: 2px solid white;
+}
+
+#InfoPrincipal{
+    text-align: center;
+    color: rgb(54, 155, 223);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;    
+}
+
+.Inicio__Ingreso{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+h5{
+    position: relative;
+    display: inline;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    margin: 40px 3px;
+    color: rgb(54, 155, 223);
+}
+
+form{
+    position: relative;
+    display: inline;
+    text-align: center;
+}
+
+#IngresoNombre{
+    width: 180px;
+    height: 8px;
+}
+
+#IngresoEmail{
+    width: 190px;
+    height: 8px;
+}
+
+#ButtonEnviar{    
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 600;
+    color: BLACK;
+    border: 1px solid rgb(35, 105, 134);
+    background: rgb(54, 155, 223);
+    width: 50px;
+    height: 20px;
+    margin: 8px 0px;
+}
+
+.Section__Razer{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgb(0,156,0);
+    border-top: 2px solid rgb(0,156,0);
+    border-radius: 5px;
+}
+
+#Razer{    
+    text-shadow: 0px 0px 12px rgb(2, 83, 2);
+    color: rgb(19, 143, 19);    
+    border: 5px outset rgb(0,156,0);
+}
+
+p{
+    text-align: center;
+    width: 500px;
+    height: auto;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 20px auto;
+    color: white;
+}
+
+.Section__Razer button{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    margin: 2px;
+    background: none;
+    color: rgb(0,156,0);
+    border: 2px solid rgb(0,80,0);
+}
+.Images__Razer{   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+.ImgRazer__1 img{    
+    object-fit: contain;
+    width: 180px;
+    height: 170px;
+    margin: 0px 5px;
+}
+.ImgRazer__2 img{
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+    margin: 0px 5px;
+}
+.ImgRazer__3 img{
+    object-fit: contain;
+    width: 120px;
+    height: 200px;
+    margin: 0px 5px;
+}
+.Contenido__Interactivo-Razer-Link{
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    padding: 2px;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    height: 18px;
+}
+.Contenido__Interactivo-Razer-Link nav a{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 12px;
+    color: green;
+}
+.Contenido__Interactivo-Razer-Link nav:hover > a{
+    color: white;
+    background: rgba(7, 66, 44, 0.8);
+    padding: 2px;
+}
+
+.Contenido__Interactivo-Razer-Video{    
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 8px;
+}
+
+.Video__Razer{
+    outline:3px inset green;
+    width: 500px;
+    height: auto;
+}
+
+
+.Section__Logitech{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid blue;
+    border-top: 4px solid blue;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+#Logitech{
+    color: rgb(24, 42, 204);
+    border: 5px outset rgb(24, 42, 200);
+    text-shadow: 0px 0px 12px rgb(18, 34, 172);
+}
+.Images__Logitech{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 100%;
+    height: auto;
+}
+.ImgLogi__1 img{
+    object-fit: contain;
+    width: 180px;
+    height: auto;
+    margin: 0px 5px;
+}
+.ImgLogi__2 img{  
+    object-fit: contain;
+    width: 300px;
+    height: auto;
+    margin: 0px 5px;
+}
+.ImgLogi__3 img{
+    object-fit: contain;
+    width: 210px;
+    height: auto;
+    margin: 0px 5px;
+}
+.Contenido__Interactivo-Logitech-Video{    
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 5px 0px;    
+}
+.Contenido__Interactivo-Logitech-Video video{
+    width: 450px;
+    height: auto;    
+    outline: 3px groove rgb(24, 42, 200);
+}
+.Contenido__Interactivo-Logitech-Link{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 160px;
+    height: 18px;
+    padding: 2px;
+    text-align: center;
+}
+.Contenido__Interactivo-Logitech-Link nav a{
+    color: rgb(65, 113, 243);
+    font-family: 'Merriweather', sans-serif;
+    font-size: 12px;
+}
+.Contenido__Interactivo-Logitech-Link nav:hover > a{
+    color: white;
+    background-color: blue;
+    padding: 2px;
+}
+.Section__Logitech button{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    background: none;
+    color: rgb(65, 113, 243);
+    border: 2px solid rgb(52, 87, 175);
+    margin: 5px;
+}
+
+.Section__Redragon{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid rgb(173, 26, 26);
+    border-top: 4px solid rgb(173, 26, 26);
+    border-radius: 8px;
+}
+
+#Redragon{
+    color: rgb(173, 26, 26);
+    border: 5px outset rgb(139, 21, 21);
+    text-shadow: 0px 0px 12px rgb(119, 16, 16); 
+}
+
+.Images__Redragon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 5px auto;
+}
+.ImgRedragon__1 img {
+    object-fit: contain;
+    width: 250px;
+    height: auto;
+}
+.ImgRedragon__2 img{
+    object-fit: contain;
+    width: 350px;
+    height: auto;
+}
+
+.ImgRedragon__3 img{
+    object-fit: contain;
+    width: 320px;
+    height: auto;
+}
+.Contenido__Interactivo-Redragon-Video{
+    text-align: center;
+    width: 100%;
+    margin: 5px 0px;
+    height: auto;
+}
+.Contenido__Interactivo-Redragon-Video video{
+    width: 450px;
+    height: auto;    
+    outline: 3px groove rgb(139, 21, 21);
+}
+.Contenido__Interactivo-Redragon-Link{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 0;
+    width: 160px;
+    height: 18px;
+    padding: 2px;
+    text-align: center;
+}
+.Contenido__Interactivo-Redragon-Link nav a{
+    color: rgb(216, 31, 31);
+    font-family: 'Merriweather', sans-serif;
+    font-size: 12px;
+}
+.Contenido__Interactivo-Redragon-Link nav:hover > a{
+    color: white;
+    background-color: rgb(99, 17, 17);
+    padding: 2px;
+}
+.Section__Redragon button{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    background: none;
+    border: 2px solid rgb(139, 21, 21);
+    color:rgb(216, 31, 31);
+    margin: 5px;
+}
+
+.TextoFinal{
+    position: relative;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+}
+#Creditos{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 10px;  
+    text-align: right;
+    color: cyan;
+}
+
+@media screen and (min-width: 1024px){
+    .Logos img{
+        width: 50px;
+        height: 50px;
+    }
+
+    h1{
+        font-size: 100px;
+    }
+    #InfoPrincipal{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    #ButtonEnviar{ 
+        width: 60px;
+        height: 25px;
+        font-size: 15px;
+    }
+    p{
+        font-size: 25px;
+        width: 600px;
+    }
+    .ImgRazer__1 img{
+        width: 190px;
+        height: auto;
+    }
+    .ImgRazer__2 img{
+        width: 190px;
+        height: auto;
+    }
+    .ImgRazer__3 img{
+        width: 120px;
+        height: auto;
+    }
+    .Video__Razer{
+        outline:3px inset green;
+        margin: 8px 0px;
+        width: 650px;
+        height: auto;
+    }
+    .Contenido__Interactivo-Razer-Link{        
+        width: 200px;
+        height: auto;
+    }
+    .Contenido__Interactivo-Razer-Link nav a{
+        font-size: 15px;
+    }
+    .Section__Razer button{
+        font-size: 15px;
+    }
+    .ImgLogi__1 img{
+        width: 190px;
+    }
+    .ImgLogi__2 img{
+        width: 360px;
+    }
+    .ImgLogi__3 img{
+        width: 280px;
+    }
+    .Contenido__Interactivo-Logitech-Video video{
+        width: 680px;
+        margin: 8px 0px;
+    }
+    .Contenido__Interactivo-Logitech-Link{        
+        width: 200px;
+        height: auto;
+    }
+    .Contenido__Interactivo-Logitech-Link nav a{
+        font-size: 15px;
+    }
+    .Section__Logitech button{
+        font-size: 15px;
+    }
+    .ImgRedragon__1 img{
+        width: 280px;
+    }
+    .ImgRedragon__2 img{
+        width: 370px;
+    }
+    .ImgRedragon__3 img{
+        width: 360px;
+    }
+    .Contenido__Interactivo-Redragon-Video video{
+        width: 650px;
+    }
+    .Contenido__Interactivo-Redragon-Link{        
+        width: 200px;
+        height: auto;
+    }
+    .Contenido__Interactivo-Redragon-Link nav a{
+        font-size: 15px;
+    }
+    .Section__Redragon button{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    .ImgRazer__1 img{
+        width: 150px;
+        height: 140px;
+    }
+    .ImgRazer__2 img{
+        width: 160px;
+        height: auto;
+    }
+    .ImgRazer__3 img{
+        width: 90px;
+        height: auto;
+    }
+    .Video__Razer{
+        outline:3px inset green;
+        width: 350px;
+        height: auto;
+        margin: 10px 0px;
+    }
+    .ImgLogi__1 img{
+        width: 130px;
+    }
+    .ImgLogi__2 img{
+        width: 220px;
+    }
+    .ImgLogi__3 img{
+        width: 150px;
+    }
+    .Contenido__Interactivo-Logitech-Video video{
+        width: 380px;
+        margin: 18px 0px;
+    }
+    .ImgRedragon__1 img{
+        width: 180px;
+    }
+    .ImgRedragon__2 img{
+        width: 240px;
+    }
+    .ImgRedragon__3 img{
+        width: 230px;
+    }
+    .Contenido__Interactivo-Redragon-Video video{
+        width: 350px;
+        margin: 18px 0px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .Logos img{
+        width: 30px;
+        height: 30px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+    #InfoPrincipal{
+        font-size: 15px;
+    }
+    h5{
+        font-size: 10px;
+    }
+    #ButtonEnviar{ 
+        width: 40px;
+        height: 15px;
+        font-size: 5px;
+    }
+    p{
+        font-size: 13px;
+        width: 320px;
+    }
+    .ImgRazer__1 img{
+        width: 100px;
+        height: 70px;
+    }
+    .ImgRazer__2 img{
+        width: 90px;
+        height: auto;
+    }
+    .ImgRazer__3 img{
+        width: 50px;
+        height: auto;
+    }
+    .Video__Razer{
+        outline:3px inset green;
+        margin: 8px 0px;
+        width: 250px;
+        height: auto;
+    }
+    .Contenido__Interactivo-Razer-Link{        
+        width: 120px;
+        height: 10px;
+        margin: 5px 0px;
+    }
+    .Contenido__Interactivo-Razer-Link nav a{
+        font-size: 8px;
+    }
+    .Section__Razer button{
+        font-size: 8px;
+    }
+    .ImgLogi__1 img{
+        width: 90px;
+    }
+    .ImgLogi__2 img{
+        width: 160px;
+    }
+    .ImgLogi__3 img{
+        width: 110px;
+    }
+    .Contenido__Interactivo-Logitech-Video video{
+        width: 280px;
+        margin: 8px 0px;
+    }
+    .Contenido__Interactivo-Logitech-Link{        
+        width: 120px;
+        height: 10px;
+        margin: 5px 0px;
+    }
+    .Contenido__Interactivo-Logitech-Link nav a{
+        font-size: 8px;
+    }
+    .Section__Logitech button{
+        font-size: 8px;
+    }
+    .ImgRedragon__1 img{
+        width: 110px;
+    }
+    .ImgRedragon__2 img{
+        width: 160px;
+    }
+    .ImgRedragon__3 img{
+        width: 150px;
+    }
+    .Contenido__Interactivo-Redragon-Video video{
+        width: 250px;
+        margin: 10px;
+    }
+    .Contenido__Interactivo-Redragon-Link{        
+        width: 120px;
+        height: 10px;
+        margin: 5px 0px;
+    }
+    .Contenido__Interactivo-Redragon-Link nav a{
+        font-size: 8px;
+    }
+    .Section__Redragon button{
+        font-size: 8px;
+    }
+}
