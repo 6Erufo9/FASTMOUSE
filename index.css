@@ -1,193 +1,323 @@
-
-
-p{
+body{
+    background-color: rgb(0, 1, 27);
+    font-family: "Montserrat", sans-serif;    
     position: relative;
-    color: white;
-    text-align: center;
-    margin: auto;
-    width: 800px;
-    font-size: 20px;    
+    width: 100%;
+    padding: 0;
+    padding-bottom: 3rem;
+    margin: 0;
 }
-
-a{
-    text-decoration:none;
-}
-
-h3{
-    display: block;
-    position: relative;    
-    width:fit-content;
-    margin: auto;
-    top: 0;
-    padding-bottom: 10px;
-    padding-right: 15px;
-    color: rgb(123, 186, 228);
-    border-bottom: 2px dotted rgb(83, 128, 190);
-    border-width: 4px;
-    border-bottom-right-radius: 22px;
-}
-
-h4{
-    color: white;
-    font-size: 16px;
-    text-shadow: 0px 2px 10px rgb(117, 98, 230);
-    padding: 5px 0px ;
-    border: 2px inset rgb(39, 39, 163);
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-h5{
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-    display: inline-block;
-    letter-spacing: 1.5px;
-}
-
-.Inital{
-    display: block;
-
-}
-.Explanation{
-    display: block;
-}
-.Linkedin{
-    border-radius: 8px;
-}
-.Github{
-    background-color: rgba(169, 170, 233, .6);
-    border-radius: 23px;
-}
-.Instagram{
-    border-radius: 11px;
-}
-.Login{
+header{    
     position: absolute;
+    width: 100%;
+    background: linear-gradient(180deg, rgb(10, 0, 99, .4), rgb(0, 1, 27));
+    z-index: 1;    
+}
+.header{
     display: flex;
-    align-self: center;
-    left: 0;
-}
-#Razer{
-    position: relative;
-    width: 100px;
-    height: 80px;
-    object-fit: contain;  
-}
-#Logitech{
-    position: relative;
-    width: 100px;
-    height: 80px;
-    object-fit: contain;  
-}
-#Redragon{
-    position: relative;
-    width: 110px;
-    height: 100px;
-    object-fit: cover;  
-}
-body{    
-    font-family: 'Rubik', sans-serif;
-    background-color: rgb(6, 7, 26);
-    text-align: center;
-}
-
-header{
-    color: #fff;
-    display: block;
-    text-align: center;
-    text-shadow: 0px 0px 15px blue;    
-    font-size: 35px;
-}
-
-header :hover{
-    color: rgb(117, 98, 230);
-    text-shadow: white;
-}
-.Welcome{
-    color:blue;
-    display: flex;
-    text-align: center;
-    font-size: 27px;
-}
-
-.Welcome :hover{    
-    text-shadow: 1px 2px 2px rgb(83, 128, 190);
-}
-
-.Introduction{
-    display: flex;
-    position: relative;
-    padding: 20px;
-    margin: 25px auto;
-    border-top: 3px solid rgb(48, 122, 235);
-    border-radius: 5px;
-    width:max-content;
-    box-shadow: 0px 0px 2px rgb(48, 122, 235);
-}
-
-.Introduction :hover{
-    text-shadow: 0px 0px 8px white;
+    justify-content: space-around;
 }
 
 .Options{
-    display: block;
-    width: fit-content;
-    margin: auto;
+    display: flex;
 }
 
-.Options div{
-    width: 150px;
-    display: inline-block;
-    margin: 7px 15px;
+li{
+    list-style: none;
+    width: auto;
+    padding: 5px;
+    margin: 5px 10px;
 }
 
-.Options div a :hover{
-    background-color: rgba(21, 53, 92, 0.25);
-    padding-top: 2px;
-    padding-bottom: 4px;
-    color: rgb(178, 207, 250);
-    text-shadow: 0px 3px 5px rgb(212, 229, 255);
-    border-bottom-left-radius: 0;
+a{
+    text-decoration: none;
+    padding: 2px;
 }
 
-.News{
-    display: inline-block;
-    width: fit-content;
+span{
+    color: white;
+    font-size: 17px;
+}
+
+li a :hover{
+    text-shadow: 0px 4px 10px rgb(50, 98, 255);
+    padding: 4px 0px;
+    border-top: 2px solid rgba(0, 174, 255, .3);
+}
+
+.Content{
+    width: 100%;
+}
+
+.ImagePrincipal{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;   
+}
+.ImagePrincipal img{  
+    object-fit: contain;
+    width: 100%;
+    opacity: .6;
+}
+
+.FirstText{    
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 1fr 160px 100px 150px;
+    position: absolute;
+    color: white;
+    height: 100%;
+    text-align: left;
+    padding-left: 60px;
+}
+
+h1{    
+    grid-row: 2 / span 1;
+    font-size: 40px;    
+    user-select: none;
+}
+p{
+    grid-row: 3 / span 1;
+    font-size: 20px;
+    user-select: none;
+}
+
+.FirstText a{
+    grid-row: 4 / span 1;
+    text-align: left;
+    align-content: top;   
+}
+
+.FirstText span{
+    width: 200px;
+    height: 40px;
+    padding: 11px 20px;
+    border: 1px outset rgb(20,31, 100);
+    box-shadow: 2px 3px 5px rgb(20,20, 200);
+    font-size: 15px;
+}
+
+.FirstText a :hover{
+    border-top-right-radius: 10px;
+    text-shadow: 0px 0px 15px rgb(20,20, 200);
+    background-color: rgb(20,20, 200);
+    box-shadow: none;
+    font-size: 16px;
+    padding: 12px 15px;
+}
+
+.MouseGaming{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.BoxMouse{
+    grid-column: 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 100%;
+    column-gap: 60px;
+}
+
+h3{
+    color: white;
+    font-size: 20px;
+}
+
+.BoxMouse div{
+    text-align: center;    
+}
+
+.BoxImage{
+    width: 100%;
+}
+
+.BoxImage img{
+    object-fit: contain;
+    width: 220px;
+    height: 260px;
+}
+
+.BoxInfo{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 50px max-content 50px;
+    align-content: center;
+    justify-content: center;
+}
+
+.BoxInfo div{
+    align-content: center;
+}
+
+.BoxInfo img{
+    object-fit: contain;
+    width: 23px;
+}
+
+
+.Buy a :hover{
+    text-shadow: 0px 3px 4px rgb(50, 98, 255);
+}
+
+.Cart a :hover{
+    width: 27px;
+}
+
+.MoreInfo a :hover{
+    width: 27px;
+}
+
+.CuriousFact{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;    
+}
+.InfoFact{
+    width: 100%;     
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.04turn,rgb(0, 1, 27), rgb(104, 212, 255), rgb(0, 1, 27));
+}
+.InfoFact h3{
+    margin: 0;
+    color: black;
+}
+
+.MouseGaming2{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding: 20px;
+    margin: 30px 0px;
+}
+
+.Information{
+    background: linear-gradient(180deg, rgb(104, 212, 255), rgb(0,1,27)) ;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.HeaderInformation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    background-color: rgb(8, 9, 30);
-    border-radius: 20px;
-    border-top: 5px double rgb(23, 45, 119);
-    margin: 20px;
-    padding: 10px;    
-    box-shadow: 0px 0px 10px blue;
+    margin: 20px 0px;    
 }
+
+.HeaderInformation h1{ 
+    text-shadow: 0px 2px 3px rgb(255,255,255);
+}
+
+.ContentInformation{
+    width: 1090px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,260px));
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    margin: 25px 0px;
+}
+
+.ContentInformation div :hover{    
+    background: linear-gradient(rgba(104, 212, 255, 0.692)55%, rgba(0,1,27,.1))60%; 
+}
+
+.TextInformation{       
+    border-left: 2px solid rgba(104, 212, 255, .3);
+    border-top-left-radius: 18px;
+    border-top-right-radius: 8px;
+    text-align: left;
+    padding: 2px 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TextInformation h3{
+    pointer-events: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0;
+    padding: 5px 0px;
+    
+}
+
+.TextInformation p{
+    pointer-events: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    width: 100%;
+    margin: 0;
+    padding: 8px 0px;
+}
+
+.TextInformation a{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.TextInformation span{
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+
+
+
 
 footer{
-    display: flex;
-    position: sticky;
-    background-color: rgb(10, 10, 39);
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    border-top: 1px solid rgb(0, 153, 255, .3);
+}
+
+.footer{
+    display: flex;    
+    justify-content: center;
+    background-color: black;
+    padding-top: 15px;
+}
+
+.Socialnetworks{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
     height: 60px;
-    justify-content: right;
-    left: 0;
-    bottom: 0;    
 }
 
-footer img {
-    position: relative;
-    width: 37px;
-    height: 37px;
-    margin: 5px;
-    padding: 4px;
-    object-fit: contain;    
+.footer img{
+    width: 30px;
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 12px;
 }
-
-footer a :hover{
-    box-shadow: 0px 0px 5px rgb(78, 114, 180);
-    width: 34px;
-    margin: 8px;
+.footer a :hover{
+    width: 33px;
+    padding: 2px;
+    margin: 0px 11px;
 }
-
-
 
