@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 1, 27);
+    font-family: "Montserrat", sans-serif;    
+    position: relative;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 3rem;
+    margin: 0;
+}
+header{    
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, rgb(10, 0, 99, .4), rgb(0, 1, 27));
+    padding: 6px 0px;
+    z-index: 1;    
+}
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.Options{
+    display: flex;
+    transition: .5s;
+    width: max-content;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MenuContainer{
+    list-style: none;   
+    width: max-content;
+    height: min-content;
+    position: relative;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    text-align: left;
+    margin: 0 20px; 
+}
+
+.MenuItem{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.MenuInside{
+    clip-path: var(--clip);
+    transition: clip-path .5s;
+    position: absolute;
+    left: 0;
+    width: max-content;
+    margin-top: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 3px;
+    background: linear-gradient(0deg, rgb(10, 0, 99, .4), rgb(0, 1, 27));
+}
+
+.OptionInside{
+    width: 100%;
+    padding: 3px 7px;
+}
+
+.NameOptionInside{
+    font-size: 16px;
+    font-weight: 200;
+    transition: .3s;
+}
+
+.MenuItem:hover{
+    border-top: 1px solid rgb(104, 212, 255);
+}
+
+.Options :hover{        
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.OptionInside :hover{
+    border-left:1px solid rgb(104, 212, 255);
+    padding-left: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.Content{
+    width: 100%;
+}
+
+.ContentPrincipal{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;   
+}
+.ImagePrincipal{  
+    object-fit: contain;
+    width: 100%;
+    opacity: .6;
+}
+
+.FirstText{    
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: 1fr 160px 100px 150px;
+    position: absolute;
+    color: white;
+    height: 100%;
+    text-align: left;
+    padding-left: 60px;
+}
+
+.HOne{    
+    grid-row: 2 / span 1;
+    font-size: 40px;    
+    user-select: none;
+}
+.POne{
+    grid-row: 3 / span 1;
+    font-size: 20px;
+    user-select: none;
+}
+
+.BoxInfoText{
+    grid-row: 4 / span 1;
+    text-align: left;
+    align-content: top;   
+}
+
+.InfoText{
+    width: 200px;
+    height: 40px;
+    padding: 11px 20px;
+    box-shadow: 2px 3px 5px rgb(20,20, 200);
+    border: 1px outset rgb(20,31, 100);
+    font-size: 15px;
+    transition: .3s;
+}
+
+.BoxInfoText :hover{
+    background-color: rgba(20,20, 200, .3);
+    box-shadow: none;
+}
+
+
+
+
+.MouseGaming{
+    position: relative;
+    display: grid;    
+    place-items: center;
+    width: 100%;
+    padding: 50px 20px;
+    margin: 20px auto;
+}
+
+.BoxMouse{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: max-content;
+    height: auto;
+    column-gap: 60px;
+    align-items: center;
+}
+
+.MouseLogi{
+    grid-column: 1 / span 1;
+}
+
+.MouseRazer{
+    grid-column: 2 / span 1;
+}
+
+.MouseRedragon{
+    grid-column: 3 / span 1;
+}
+
+.InfoMouse{
+    width: 270px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 60px 110px 60;
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    align-items: center;
+}
+
+.NameMouse{
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.ImageMouse{
+    width: 100%;
+    height: max-content;
+    padding: 10px 0px;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    pointer-events: none;
+}
+
+.ImageMouse img{
+    object-fit: contain;
+    width: 220px;
+    height: 260px;
+}
+
+.AddProduct{    
+    grid-column: 1 / span 1;
+    grid-row: 3 / 4;
+    background-color: transparent;
+    width: 100%;
+    border: 0;
+    transition: .4;
+}
+
+.PriceMouse{
+    grid-column: 2 / span 1;
+    grid-row: 3 / 4;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    pointer-events: none;
+}
+
+.MoreInfo{
+    grid-column: 3 / span 1;
+    grid-row: 3 / 4 ;
+}
+
+.Icon{
+    object-fit: contain;
+    width: 32px;
+    padding: 5px;
+    pointer-events: none;
+}
+
+.InfoMouse :hover{  
+    box-shadow: 0 0 12px -2px rgba(37, 17, 221, 0.705);
+    border-radius: 15px;
+}
+
+
+
+
+.CuriousFact{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;    
+}
+.InfoFact{
+    width: 100%;     
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.04turn,rgb(0, 1, 27), rgb(104, 212, 255), rgb(0, 1, 27));
+}
+.InfoFact h3{
+    margin: 0;
+    color: black;
+}
+
+
+
+
+.Information{
+    background: linear-gradient(180deg, rgb(104, 212, 255), rgb(0,1,27)) ;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.HeaderInformation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top:40px;
+    text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    color: white;
+    font-size: 25px;
+}
+
+.ContentInformation{
+    width: 1090px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,260px));
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    margin: 25px 0px;       
+}
+
+.InfoSection {
+    border-top: 2px solid rgba(104, 212, 255, 0.692);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 100%;    
+    height: max-content;    
+}
+
+.TextInformation{          
+    text-align: center;    
+    padding: 13px 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TextInformation h3{
+    grid: 1 / 2;
+    pointer-events: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 3px rgb(0, 0, 0);
+    width: 100%;
+    padding: 7px 0px;
+}
+
+.TextInformation p{
+    grid: 2/ span 1;
+    pointer-events: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    padding: 13px 0px;
+}
+
+.LinkMore{
+    width: 100%;
+    border-radius: 5px;
+    padding: 3px;
+    grid: 3/ span 1;
+}
+
+.BestMouse{
+    width: 100%;
+    border-radius: 5px;
+    padding:5px;
+    grid: 4/span 1;
+}
+
+.InfoSection:hover{    
+    background: linear-gradient(rgba(104, 212, 255, 0.692)55%, rgba(0,1,27,.1))50%;
+}
+
+.TextInformation :hover {
+    background: linear-gradient(rgba(104, 212, 255, 0.692)55%, rgba(0,1,27,.1))50%;
+    border: 1px solid rgba(104, 212, 255, 0.692);
+}
+
+
+
+
+.InteractionPurchase{
+    position:fixed;
+    width: max-content;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.PurchaseCart{
+    display: flex;
+    width: 23px;
+    margin: 20px 30px;
+}
+
+.PurchaseCart img{
+    object-fit: contain;
+    width: 35px;
+    height: max-content;
+}
+
+.NumProducts{
+    position: absolute;
+    top: 11px;
+    left: 46px;
+    color: #ffff;
+    font-size: 12px;
+}
+
+.CounterListProducts{
+    position: absolute;    
+    top: 70px;    
+    right: 4px;
+}
+
+.ListProducts{
+    display: block;
+    position: relative;
+    border-right: 3px solid rgb(104, 212, 255);
+    width: auto;
+    height: max-content;
+}
+
+.InfoProduct{
+    position: relative;
+    display: grid;
+    width: auto;
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    grid-template-columns: 10px 250px 90px 12px;
+    gap: 10px;
+    padding: 10px 15px;
+    background: linear-gradient(180deg, rgb(0, 1, 27)2%,rgba(198, 239, 255, .7)80%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 5px solid rgb(0, 1, 27);
+}
+
+.CounterTotal{
+    display: grid;
+    position: relative;
+    border-right: 3px solid rgb(104, 212, 255);
+    width: auto;
+    height: max-content;    
+    grid-template-columns: 1fr max-content max-content;    
+    background: linear-gradient(180deg, rgb(0, 1, 27)2%,rgba(198, 239, 255, .7)80%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;    
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.Buy{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-align: left;
+    border-bottom:1px groove rgb(0, 0, 0);
+    width: max-content;
+    border-width: 3px;
+    padding: 2px 10px;
+    background: rgb(62, 124, 145);
+    border-radius: 20px;
+}
+
+.ListProducts :hover{
+    background: linear-gradient(180deg, rgb(0, 1, 27)2%,rgba(61, 200, 255, 0.7)80%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.InfoProduct :hover{
+    background: none;
+    font-size: 13px;
+    color:rgb(255, 0, 0);
+}
+
+.CounterTotal :hover{
+    background: rgb(73, 210, 255);
+}
+
+
+
+.Amount{
+    font-weight: 500;    
+    pointer-events: none;
+}
+.Name{
+    pointer-events: none;
+}
+.Price{
+    font-weight: 500;
+    pointer-events: none;
+}
+.Delete{
+    font-weight: 700;
+}
+.Total{
+    font-weight: 500;
+    pointer-events: none;
+}
+.HiddenCart{
+    visibility: hidden;
+}
+.HiddenListProducts{
+    visibility: hidden;
+}
+#CounterProducts{
+    pointer-events: none;
+}
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgb(0, 153, 255, .3);
+}
+
+.footer{
+    width: 100%;
+    height: 100%;
+    display: flex;    
+    justify-content: center;
+    background-color: black;
+    padding-top: 15px;
+}
+
+.Socialnetworks{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 60px;
+}
+
+.footer img{
+    width: 40px;
+    margin: 0px 10px;
+    padding: 5px;
+    border-radius: 12px;
+}
+.footer a :hover{
+    width: 38px;
+    padding: 2px;
+    margin: 0px 11px;
+}
+
