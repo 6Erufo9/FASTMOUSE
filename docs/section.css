@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 1, 27);
+    font-family: "Montserrat", sans-serif;    
+    position: relative;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 3rem;
+    margin: 0;
+}
+
+/* HEADER */
+
+header{    
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, rgb(10, 0, 99, .4), rgb(0, 1, 27));
+    padding: 6px 0px;
+    z-index: 1;    
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.Options{
+    display: flex;
+    transition: .5s;
+    width: max-content;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MenuContainer{
+    list-style: none;   
+    width: max-content;
+    height: min-content;
+    position: relative;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    text-align: left;
+    margin: 0 20px; 
+}
+
+.MenuItem{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.MenuInside{
+    clip-path: var(--clip);
+    transition: clip-path .5s;
+    position: absolute;
+    left: 0;
+    width: max-content;
+    margin-top: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 3px;
+    background: linear-gradient(0deg, rgb(10, 0, 99, .4), rgb(0, 1, 27));
+}
+
+.OptionInside{
+    width: 100%;
+    padding: 3px 7px;
+}
+
+.NameOptionInside{
+    font-size: 16px;
+    font-weight: 200;
+    transition: .3s;
+}
+
+.MenuItem:hover{
+    border-top: 1px solid rgb(104, 212, 255);
+}
+
+.Options :hover{        
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.OptionInside :hover{
+    border-left:1px solid rgb(104, 212, 255);
+    padding-left: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
